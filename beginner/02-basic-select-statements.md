@@ -12,17 +12,13 @@ FROM table_name;
 - `column1, column2, ...` are the names of the columns you want to retrieve.
 - `table_name` is the name of the table from which to retrieve the data.
 
-## Selecting All Columns
-
-To select all columns from a table, use the `*` wildcard:
+## Selecting All Columns: To select all columns from a table, use the `*` wildcard:
 
 ```sql
 SELECT * FROM table_name;
 ```
 
-## Using WHERE Clause
-
-The `WHERE` clause is used to filter records:
+## Using WHERE Clause - The `WHERE` clause is used to filter records:
 
 ```sql
 SELECT column1, column2, ...
