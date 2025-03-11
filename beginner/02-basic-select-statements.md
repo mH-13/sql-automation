@@ -33,9 +33,7 @@ SELECT * FROM employees
 WHERE department = 'Sales';
 ```
 
-## Using ORDER BY Clause
-
-The `ORDER BY` clause is used to sort the result set:
+## Using ORDER BY Clause:  The `ORDER BY` clause is used to sort the result set:
 
 ```sql
 SELECT column1, column2, ...
@@ -50,9 +48,7 @@ SELECT * FROM employees
 ORDER BY last_name ASC;
 ```
 
-## Using DISTINCT Keyword
-
-The `DISTINCT` keyword is used to return only distinct (different) values:
+## Using DISTINCT Keyword:  The `DISTINCT` keyword is used to return only distinct (different) values:
 
 ```sql
 SELECT DISTINCT column1, column2, ...
@@ -66,9 +62,7 @@ SELECT DISTINCT department
 FROM employees;
 ```
 
-## Using LIMIT Clause
-
-The `LIMIT` clause is used to specify the number of records to return:
+## Using LIMIT Clause: The `LIMIT` clause is used to specify the number of records to return:
 
 ```sql
 SELECT column1, column2, ...
@@ -83,9 +77,7 @@ SELECT * FROM employees
 LIMIT 10;
 ```
 
-## Combining Conditions with AND, OR
-
-You can combine multiple conditions using `AND` and `OR`:
+## Combining Conditions with AND, OR:  You can combine multiple conditions using `AND` and `OR`:
 
 ```sql
 SELECT column1, column2, ...
@@ -100,9 +92,7 @@ SELECT * FROM employees
 WHERE department = 'Sales' AND salary > 50000;
 ```
 
-## Using Aliases
-
-Aliases are used to give a table or a column a temporary name:
+## Using Aliases: Aliases are used to give a table or a column a temporary name:
 
 ```sql
 SELECT column_name AS alias_name
@@ -116,9 +106,7 @@ SELECT first_name AS fname, last_name AS lname
 FROM employees;
 ```
 
-## Joining Tables
-
-To retrieve data from multiple tables, you can use JOIN operations:
+## Joining Tables: To retrieve data from multiple tables, you can use JOIN operations:
 
 ```sql
 SELECT columns
@@ -141,13 +129,13 @@ These are the basics of the `SELECT` statement in SQL. With these tools, you can
 
 ## Code Example
 -- Select specific columns
-SELECT name, age FROM employees;
+# SELECT name, age FROM employees;
 
 -- Select all columns
-SELECT * FROM employees;
+# SELECT * FROM employees;
 
 -- Select with a condition
-SELECT * FROM employees WHERE age > 25;
+# SELECT * FROM employees WHERE age > 25;
 
 # Use Case:
 
