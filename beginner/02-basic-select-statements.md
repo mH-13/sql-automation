@@ -138,5 +138,4 @@ These are the basics of the `SELECT` statement in SQL. With these tools, you can
 # SELECT * FROM employees WHERE age > 25;
 
 # Use Case:
-
 You need a list of employees over 25 years old for a benefits program. A SELECT statement with a WHERE clause retrieves this data efficiently.

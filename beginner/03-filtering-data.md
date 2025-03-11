@@ -1,9 +1,7 @@
 # Filtering Data in SQL
-
 Filtering data is a fundamental aspect of querying databases in SQL. It allows you to retrieve only the rows that meet certain criteria, making your queries more efficient and your results more relevant.
 
 ## Basic Filtering with `WHERE`
-
 The `WHERE` clause is used to filter records based on specified conditions. The basic syntax is:
 
 ```sql
@@ -143,5 +141,6 @@ SELECT * FROM employees WHERE age > 25 AND department = 'Sales';
 
 
 Use Case:
+
 
 You’re analyzing Sales team performance and need employees aged 25–35. A filtered SELECT query identifies this group.
