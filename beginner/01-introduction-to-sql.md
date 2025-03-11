@@ -1,3 +1,4 @@
+# Gork
 -- Create a new database
 CREATE DATABASE my_database;
 
@@ -5,19 +6,22 @@ CREATE DATABASE my_database;
 USE my_database;
 
 -- Create a table
-CREATE TABLE employees (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    age INT,
-    department VARCHAR(50)
-);
+**CREATE TABLE employees (**
+    **id INT PRIMARY KEY,**
+    **name VARCHAR(50),**
+    **age INT,**
+    **department VARCHAR(50)**
+); **
 
 -- Insert data
-INSERT INTO employees (id, name, age, department)
-VALUES (1, 'John Doe', 30, 'Sales');
+**INSERT INTO employees (id, name, age, department)**
+**VALUES (1, 'John Doe', 30, 'Sales');**
 
 -- Retrieve all data
-SELECT * FROM employees;
+**SELECT * FROM employees;**
+
+
+# Brief Discussion
 
 ## Introduction to SQL
 
@@ -37,11 +41,11 @@ Learning SQL is like learning how to ask a librarian for the exact book you want
 
 Here are some basic SQL commands to get you started:
 
-- **CREATE DATABASE**: This command creates a new database.
-- **USE**: This command selects the database you want to work with.
-- **CREATE TABLE**: This command creates a new table within the database.
-- **INSERT INTO**: This command adds new data to a table.
-- **SELECT**: This command retrieves data from a table.
+- **CREATE DATABASE**: creates a new database.
+- **USE**:selects the database you want to work with.
+- **CREATE TABLE**: creates a new table within the database.
+- **INSERT INTO**: adds new data to a table.
+- **SELECT**: retrieves data from a table.
 
 ### Example
 
