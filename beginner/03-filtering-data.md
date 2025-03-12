@@ -91,7 +91,6 @@ This query retrieves all employees whose first name starts with the letter 'J'.
 
 
 ## Filtering with `IS NULL` and `IS NOT NULL`
-
 To filter records with `NULL` values, use the `IS NULL` or `IS NOT NULL` operators.
 
 ### Example
@@ -100,13 +99,11 @@ To filter records with `NULL` values, use the `IS NULL` or `IS NOT NULL` operato
 SELECT * FROM orders
 WHERE delivery_date IS NULL;
 ```
-
 This query retrieves all orders that do not have a delivery date.
 
+
 ## Combining Filters
-
-You can combine multiple filtering techniques to create complex queries.
-
+You can combine multiple filtering techniques to create complex queries.  
 ### Example
 
 ```sql
@@ -119,23 +116,3 @@ This query retrieves all electronic products priced between 100 and 500 that are
 ## Conclusion
 
 Filtering data in SQL is a powerful way to retrieve specific subsets of data from your database. By using the `WHERE` clause along with various operators and conditions, you can create precise and efficient queries to meet your data retrieval needs.
-
-
-# claude 
-Explanation:
-
-The WHERE clause filters rows based on conditions, using operators like =, >, BETWEEN, and AND.
-
--- Filter by exact match
-SELECT * FROM employees WHERE department = 'Sales';
-
--- Filter by range
-SELECT * FROM employees WHERE age BETWEEN 25 AND 35;
-
--- Filter with multiple conditions
-SELECT * FROM employees WHERE age > 25 AND department = 'Sales';
-
-
-# Use Case:
-
-You’re analyzing Sales team performance and need employees aged 25–35. A filtered SELECT query identifies this group.
