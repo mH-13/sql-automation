@@ -140,7 +140,6 @@ SELECT * FROM employees WHERE age BETWEEN 25 AND 35;
 SELECT * FROM employees WHERE age > 25 AND department = 'Sales';
 
 
-Use Case:
-
+# Use Case:
 
 You’re analyzing Sales team performance and need employees aged 25–35. A filtered SELECT query identifies this group.
