@@ -1,8 +1,7 @@
 # Filtering Data in SQL
-Filtering data is a fundamental aspect of querying databases in SQL. It allows you to retrieve only the rows that meet certain criteria, making your queries more efficient and your results more relevant.
+Filtering allows you to retrieve only the rows that meet certain criteria, making  queries more efficient and results more relevant.
 
 ## Basic Filtering with `WHERE`
-The `WHERE` clause is used to filter records based on specified conditions. The basic syntax is:
 
 ```sql
 SELECT column1, column2, ...
@@ -14,14 +13,14 @@ WHERE condition;
 
 ```sql
 SELECT * FROM employees
-WHERE department = 'Sales';
+WHERE department = 'Sales'; 
 ```
+retrieves all employees who work in the Sales department.
 
-This query retrieves all employees who work in the Sales department.
 
 ## Using Comparison Operators
 
-Comparison operators are used to filter data based on specific conditions. Common operators include:
+filter data based on specific conditions. Common operators include:
 
 - `=` : Equal to
 - `!=` or `<>` : Not equal to
@@ -37,11 +36,10 @@ SELECT * FROM products
 WHERE price > 100;
 ```
 
-This query retrieves all products with a price greater than 100.
 
 ## Filtering with Logical Operators
 
-Logical operators allow you to combine multiple conditions. The most common logical operators are:
+allow to combine multiple conditions. The most common logical operators are:
 
 - `AND` : All conditions must be true
 - `OR` : At least one condition must be true
@@ -56,9 +54,11 @@ WHERE status = 'Shipped' AND order_date >= '2023-01-01';
 
 This query retrieves all orders that have been shipped and were placed on or after January 1, 2023.
 
+
 ## Using `IN` and `BETWEEN`
 
-The `IN` operator allows you to specify multiple values in a `WHERE` clause. The `BETWEEN` operator filters data within a range of values.
+`IN` operator allows you to specify multiple values in a `WHERE` clause. 
+`BETWEEN` operator filters data within a range of values.
 
 ### Example with `IN`
 
