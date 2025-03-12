@@ -67,16 +67,12 @@ SELECT * FROM customers
 WHERE country IN ('USA', 'Canada', 'Mexico');
 ```
 
-This query retrieves all customers from the USA, Canada, or Mexico.
-
 ### Example with `BETWEEN`
 
 ```sql
 SELECT * FROM transactions
 WHERE amount BETWEEN 100 AND 500;
 ```
-
-This query retrieves all transactions with an amount between 100 and 500.
 
 ## Filtering with `LIKE` for Pattern Matching
 
@@ -91,8 +87,8 @@ The `LIKE` operator is used for pattern matching with wildcard characters:
 SELECT * FROM employees
 WHERE first_name LIKE 'J%';
 ```
-
 This query retrieves all employees whose first name starts with the letter 'J'.
+
 
 ## Filtering with `IS NULL` and `IS NOT NULL`
 
