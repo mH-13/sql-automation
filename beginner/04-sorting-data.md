@@ -106,25 +106,3 @@ This query retrieves the product names, categories, and prices from the `product
 ## Conclusion
 
 Sorting data in SQL is a powerful feature that allows you to organize your query results in a meaningful way. By using the `ORDER BY` clause, you can sort data by one or more columns, in ascending or descending order, and even handle NULL values according to your needs. Understanding how to sort data effectively can greatly enhance the readability and usability of your query results.
-
-
-
-# claude
-
-Explanation:
-
-The ORDER BY clause sorts results by one or more columns, in ascending (ASC) or descending (DESC) order.
-
--- Sort ascending
-SELECT * FROM employees ORDER BY age ASC;
-
--- Sort descending
-SELECT * FROM employees ORDER BY age DESC;
-
--- Sort by multiple columns
-SELECT * FROM employees ORDER BY department ASC, age DESC;
-
-
-Use Case:
-
-For a company directory, you list employees alphabetically by department, then by age (oldest first) within each department.
