@@ -1,6 +1,6 @@
 # Sorting Data in SQL
 
-Sorting data in SQL is a fundamental operation that allows you to organize your query results in a specific order. This is achieved using the `ORDER BY` clause. Below, we will cover the basics of sorting data, including syntax, use cases, and examples.
+to organize your query results in a specific order. This is achieved using the `ORDER BY` clause.
 
 ## Syntax
 
@@ -22,45 +22,44 @@ ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
 
 ### 1. Sorting by a Single Column
 
-To sort the data by a single column in ascending order:
-
+To sort the data by a single column (ascending):
 ```sql
 SELECT first_name, last_name
 FROM employees
 ORDER BY last_name;
 ```
 
-To sort the data by a single column in descending order:
-
+To sort the data by a single column (descending):
 ```sql
 SELECT first_name, last_name
 FROM employees
 ORDER BY last_name DESC;
 ```
 
+
 ### 2. Sorting by Multiple Columns
 
-You can sort by multiple columns by specifying them in the `ORDER BY` clause. The sorting is performed first by the first column, then by the second column, and so on.
+by specifying them in the `ORDER BY` clause. The sorting is performed first by the first column, then by the second column, and so on.
 
 ```sql
 SELECT first_name, last_name, department
 FROM employees
 ORDER BY department, last_name;
 ```
+the data is sorted first by `department` in ascending order and then by `last_name` in ascending order within each department.
 
-In this example, the data is sorted first by `department` in ascending order and then by `last_name` in ascending order within each department.
 
 ### 3. Sorting by Column Position
 
-You can also sort by the position of the column in the `SELECT` statement. This is useful when you don't want to specify the column names explicitly.
+by the position of the column in the `SELECT` statement. This is useful when you don't want to specify the column names explicitly.
 
 ```sql
 SELECT first_name, last_name, department
 FROM employees
 ORDER BY 3, 2;
 ```
+the data is sorted first by the third column (`department`) and then by the second column (`last_name`).
 
-In this example, the data is sorted first by the third column (`department`) and then by the second column (`last_name`).
 
 ### 4. Sorting with NULL Values
 
