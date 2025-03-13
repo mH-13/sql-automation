@@ -73,8 +73,6 @@ FROM employees
 ORDER BY last_name NULLS FIRST;
 ```
 
-## Examples
-
 ### Example 1: Basic Sorting
 
 ```sql
